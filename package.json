@@ -1,0 +1,23 @@
+{
+  "name": "ts-labs",
+  "description": "Learn Typescript by watching Chai aur Code's latest typescript playlist.",
+  "keywords": [
+    "typescript"
+  ],
+  "homepage": "https://github.com/GourangaDasSamrat/ts-labs#readme",
+  "bugs": {
+    "url": "https://github.com/GourangaDasSamrat/ts-labs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GourangaDasSamrat/ts-labs.git"
+  },
+  "author": "Gouranga Das Samrat",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev":"npx tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
