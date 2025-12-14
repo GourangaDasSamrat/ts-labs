@@ -81,3 +81,31 @@ const UserInfo: readonly [string, string, number] = [
 
 // named tuple
 const ChaiItem: [name: string, price: number] = ["Ginger Chai", 2];
+
+// Enum
+
+// numeric enum
+enum CupSize {
+  SMALL, // 0
+  MEDIUM, //1
+  LARGE, //2
+}
+
+const size = CupSize.LARGE; // size is 2
+
+// string enum
+
+enum UserRole {
+  Admin = "ADMIN",
+  Editor = "EDITOR",
+  Viewer = "VIEWER",
+}
+let role: UserRole = UserRole.Admin; // role is "ADMIN"
+
+// incrementing enum
+enum Status {
+  Pending = 100,
+  SERVING, // 101
+  CANCELED, // 102
+}
+let status = Status.SERVING; // status is 101
