@@ -1,6 +1,7 @@
 import type { Card } from "../types";
 import Counter from "./Counter";
 import StudentCard from "./StudentCard";
+import AdmissionForm from "./AdmissionForm";
 
 const students: Card[] = [
   { name: "John Smith", roll: 101, age: 17, gender: "Male", isPresent: true },
@@ -121,4 +122,4 @@ const students: Card[] = [
   },
 ];
 
-export { Counter, StudentCard, students };
+export {AdmissionForm, Counter, StudentCard, students };
