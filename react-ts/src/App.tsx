@@ -1,9 +1,13 @@
+import "./App.css";
+import { Counter, StudentCard, students } from "./components";
+
 const App = () => {
   return (
     <>
-    <h1>Hello programmers</h1>
+      <StudentCard students={students} />
+      <Counter />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
