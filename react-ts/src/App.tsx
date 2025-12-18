@@ -1,5 +1,11 @@
 import "./App.css";
-import { AdmissionForm, Counter, StudentCard, students } from "./components";
+import {
+  AdmissionForm,
+  Counter,
+  StudentCard,
+  students,
+  Products
+} from "./components";
 
 const App = () => {
   return (
@@ -7,6 +13,7 @@ const App = () => {
       <StudentCard students={students} />
       <Counter />
       <AdmissionForm />
+      <Products />
     </>
   );
 };
