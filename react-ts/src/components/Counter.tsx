@@ -6,14 +6,22 @@ const Counter = () => {
   const handleAddStudent = () => setCount((prev) => prev + 1);
 
   return (
-    <div className="counter-card">
-      <h2 className="counter-title">Student Counter</h2>
+    <div className="container">
+      <h2 className="title">Student Counter</h2>
 
-      <p className="counter-value">{count}</p>
+      <div className="counter-card">
+        <h2 className="counter-title">Student Counter</h2>
 
-      <button type="button" className="counter-btn" onClick={handleAddStudent}>
-        Add Student
-      </button>
+        <p className="counter-value">{count}</p>
+
+        <button
+          type="button"
+          className="counter-btn"
+          onClick={handleAddStudent}
+        >
+          Add Student
+        </button>
+      </div>
     </div>
   );
 };
