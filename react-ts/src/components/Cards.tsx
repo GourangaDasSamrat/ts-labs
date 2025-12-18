@@ -7,11 +7,11 @@ interface CardProps extends PropsWithChildren {
 
 const Cards = ({ title, children, footer }: CardProps) => {
   return (
-    <div className="container">
-      <h2 className="title">Our Products</h2>
-      <h3 >{title}</h3>
-      <div>{children}</div>
-      {footer ?? <footer>{footer}</footer>}
+    <div className="card">
+      <h2 className="card-title">Our Products</h2>
+      <h3 className="card-subtitle">{title}</h3>
+      <div className="card-content">{children}</div>
+      {footer && <div className="card-footer">{footer}</div>}
     </div>
   );
 };
