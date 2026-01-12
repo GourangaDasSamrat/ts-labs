@@ -1,0 +1,13 @@
+{
+  "name": "todo-app",
+  "version": "0.0.0",
+  "author": "Gouranga Das Samrat",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "start": "node ./dist/main.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
