@@ -1,0 +1,22 @@
+{
+  "name": "screen-rooms-pong",
+  "version": "1.0.0",
+  "author": "Gouranga Das Samrat <gouranga.das.khulna@gmail.com>",
+  "license": "MIT",
+  "description": "A Bun-powered browser experiment where one glowing Pong ball moves across multiple real browser windows",
+  "keywords": ["pong", "browser", "multiwindow", "game"],
+  "private": false,
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "bun run src/server/server.ts",
+    "start": "bun src/server/server.ts",
+    "build": "bun build src/client/main.ts --outdir dist --target browser && bun build src/server/server.ts --outdir dist --target node",
+    "test": "bun test tests/**/*.test.ts",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.9.4"
+  }
+}
